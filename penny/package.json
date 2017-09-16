@@ -1,0 +1,14 @@
+{
+  "name": "penny",
+  "version": "1.0.0",
+  "description": "gdax trading bot",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Kevin Chandler",
+  "license": "ISC",
+  "dependencies": {
+    "gdax": "0.4.2"
+  }
+}
