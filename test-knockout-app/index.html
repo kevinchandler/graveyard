@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>ANIMALS - knockout.js example</title>
+    <script src="https://knockoutjs.com/downloads/knockout-3.5.1.js"></script>
+  </head>
+  <body>
+    <h1>Animals</h1>
+    <input type="text" data-bind="value: animal" />
+    <input type="submit" data-bind="click: addAnimal" />
+    <h3 data-bind="text: error"></h3>
+    <ul style="list-style-type: none;" data-bind="foreach: animals">
+      <li data-bind="shortenedAnimalName: $data, click: fullAnimalName"></li>
+    </ul>
+
+    <div style="margin-top:100px;">
+      <p>About:</p>
+
+      <p>You cannot add two of the same animal</p>
+      <p>Click a shortened animal name to show it's full name</p>
+    </div>
+
+    <script src="./vm.js"></script>
+  </body>
+</html>
