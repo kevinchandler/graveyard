@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>NAMES - knockout.js example</title>
+    <script src="https://knockoutjs.com/downloads/knockout-3.5.1.js"></script>
+  </head>
+  <body>
+    <h1>Names</h1>
+    <div>
+      <input type="text" data-bind="value: firstName, event: { 'blur': showGreeting }" />
+      <input type="text" data-bind="value: lastName, event: { 'blur': showGreeting }" />
+      <div data-bind="if: displayGreeting">
+        <p>Hello <span data-bind="text: fullName"></span></p>
+      </div>
+    </div>
+    <script src="./names.js"></script>
+  </body>
+</html>
